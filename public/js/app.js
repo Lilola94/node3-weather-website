@@ -19,7 +19,11 @@ weatherform.addEventListener("submit", (e) => {
       } else {
         console.log(data);
         messageOne.textContent = data.location;
-        messageTwo.textContent = data.forecast.description;
+        messageTwo.textContent =
+          "The weather is " +
+          data.forecast.description +
+          " and its humidity is  " +
+          data.forecast.humidity;
       }
     });
   });
